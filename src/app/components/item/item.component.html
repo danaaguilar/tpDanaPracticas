@@ -1,18 +1,30 @@
-<div class="row" [ngClass]="{'completed':item.completed}">
-    <div>
-        <input type="checkbox" [checked]="item.completed" (change)="onToggle(item)">
-        {{item.title}}
-    </div>
-    <div>
-        {{item.price}}
-    </div>
-    <div>
-        {{item.quantity}}
-    </div>
-    <div>
-        {{item.price * item.quantity}}
-    </div>
-    <div>
-        <button (click)="onDelete(item)">eliminar</button>
-    </div>
+<div class="container mb-3 p-2 text-primary" [ngClass]="{'completed':item.completed}">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <div>
+                <input type="checkbox" [checked]="item.completed" (change)="onToggle(item)">
+                fruta: {{item.title}}
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div>
+                precio: ${{item.price}}
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div>
+                cantidad: {{item.quantity}}
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div>
+                total: ${{item.price * item.quantity}}
+            </div>
+        </li>
+        <li class="list-group-item">
+            <button (click)="onDelete(item)" class="btn btn-primary">eliminar</button>
+        </li>
+    </ul>
 </div>
+
+

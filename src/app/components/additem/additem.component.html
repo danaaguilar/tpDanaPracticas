@@ -1,21 +1,22 @@
-
-<form action="" (ngSubmit)="onSubmit()">
-    <h2>registrar un nuevo articulo</h2>
-    <div>
-        <label for="">id del articulo</label>
-        <input type="text" name="id" id="" [(ngModel)]="id"> 
-    </div>
-    <div>
-        <label for="">nombre del articulo</label>
-        <input type="text" name="title" id="" [(ngModel)]="title"> 
-    </div>
-    <div>
-        <label for="">nombre del articulo</label>
-        <input type="text" name="price" id="" [(ngModel)]="price">
-    </div>
-    <div>
-        <label for="">nombre del articulo</label>
-        <input type="text" name="title" id="" [(ngModel)]="quantity">
-    </div>
-    <input type="submit" value="Crear">
-</form>
+<div class="container p-6 text-primary">
+    <form action="" (ngSubmit)="onSubmit()">
+        <h2>registrar un nuevo articulo</h2>
+        <div class="container p-2">
+            <label for="">id del articulo</label>
+            <input type="text" name="id" id="" [(ngModel)]="id"> 
+        </div>
+        <div class="container p-2">
+            <label for="">nombre</label>
+            <input type="text" name="title" id="" [(ngModel)]="title"> 
+        </div>
+        <div class="container p-2">
+            <label for="">precio</label>
+            <input type="text" name="price" id="" [(ngModel)]="price">
+        </div>
+        <div class="container p-2">
+            <label for="">cantidad</label>
+            <input type="text" name="title" id="" [(ngModel)]="quantity">
+        </div>
+        <input class="p-2 btn btn-primary" type="submit" value="Crear">
+    </form>
+</div>
